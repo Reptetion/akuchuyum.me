@@ -40,106 +40,94 @@
 
 <body id="/">
 
-<!-- Navigation -->
+<!-- Navbar -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-<div class="container">
-    <div class="navbar-header">
-            <a class="navbar-brand page-scroll" href="#/">Aku Chuyum</a>
-    </div>
-
-    <div class="collapse navbar-collapse navbar-main-collapse">
-    <ul class="nav navbar-nav navbar-right">
-    <li class="navbar-email">
-        <a href="mailto:prodbyakc@gmail.com">prodbyakc@gmail.com</a>
-    </li>
-    </ul>
-    </div>
+<div class="container navbar-inner">
+    <a class="navbar-brand" href="#/">Aku Chuyum</a>
+    <a class="navbar-email" href="mailto:prodbyakc@gmail.com">prodbyakc@gmail.com</a>
 </div>
 </nav>
 
-<!-- Intro Header -->
+<!-- Intro collage -->
 <header class="intro">
     <div class="tile-track" aria-hidden="true">
-            <div class="tile-seg seg1"></div>
-            <div class="tile-seg seg2"></div>
-            <div class="tile-seg seg1"></div>
-            <div class="tile-seg seg2"></div>
+        <div class="tile-strip">
+            <div class="tile-deck" style="--tile-image: url('img/website_intro_tile.jpg');"></div>
+            <div class="tile-deck" style="--tile-image: url('img/website_intro_tile2.jpg');"></div>
+            <!-- Add one more deck line here for each new image. -->
+        </div>
     </div>
-<div class="intro-body">
-<div class="container">
-    
-<div class="row">
-    <div class="col-md-8 col-md-offset-2">
-        <h1 class="brand-heading">Aku Chuyum</h1>
+    <div class="intro-body">
+        <div class="container">
+            <h1 class="brand-heading">Aku Chuyum</h1>
+        </div>
     </div>
-</div>
-
-</div>
-</div>
 </header>
 
-<!-- Main Section -->
+<!-- Main content -->
 <section id="main" class="container content-section">
-<div class="row">
-<div class="col-lg-12 main-copy">
+<div class="main-copy">
 
-    <h2><span style="color:#f84444">Salut, Je m'appelle Aku!</span></h2>
-    <p class="lead-copy">I am a freelance developer from Canada. I work primarly with JavaScript, HTML & CSS, dealing mostly with web applications and digital design.</p>
+    <h2><span class="accent">Salut, Je m'appelle Aku!</span></h2>
     <p>
-    From building Roblox games to creating Discord chatbots <i><span style="color:#f84444">(which was somewhat quite successful)</span></i>,
-    what began as a small hobby eventually grew into my passion now for coding and technology.
+        I am a freelance developer from Canada. I
+        work primarly with JavaScript, HTML & CSS, dealing mostly with web applications and digital design.
     </p>
     <p>
-    Outside of development, my hobbies include playing soccer and practicing the piano.
+        From building Roblox games to creating Discord chatbots <i class="accent">(which was somewhat quite successful)</i>,
+        what began as a little hobby eventually grew into my passion now for coding and technology.
     </p>
-    <!-- <p class="text-center"><i><span style="color:#f84444">"INSERT INSIPIRATIONAL QUOTE"</span></i> -->
+    <p>
+        Outside of development, my hobbies include playing soccer and practicing the piano.
+    </p>
 
     <div class="big-red-box" aria-label="accomplishments">
-        <h4><span style="color:#f84444">🜲 PROJECTS / CERTIFICATIONS / ACHIEVEMENTS</span></h4>
-        <p style="color:#f84444">Education & Certifications</p>
+        <h4><span class="accent">🜲 PROJECTS / CERTIFICATIONS / ACHIEVEMENTS</span></h4>
+        <p class="accent">Projects</p>
         <ul class="accomplishments-list">
-            <li><i>2023 - Present:</i> Bachelor of Business Administration - Major in Accounting with a minor in Computer Information Systems. Mount Royal University.</li>
-        </ul> 
-        <p style="color:#f84444">Projects</p>
+            <li>
+                <strong>2019 - 2021:</strong> ReCreate Discord Bot - Multipurpose chatbot for user entertainment,
+                server moderation, configurations, and automation. At its peak, reached 300+ servers with a reach of over 300,000 users.
+                Received verification status by Discord. Discountinued on 05/21/2021.
+            </li>
+        </ul>
+        <p class="accent">Education & Certifications</p>
         <ul class="accomplishments-list">
-            <li><i>2019 - 2021:</i> ReCreate Discord Bot - Multipurpose chatbot for entertainment, server mod, and automation</li>
-        </ul> 
-        
+            <li>
+                <strong>2023 - Present:</strong> Bachelor of Business Administration -
+                Major in Accounting with a minor in Computer Information Systems. Mount Royal University.
+            </li>
+            <li>
+                Early Verified Discord Bot Developer, Discord Inc. Recognized since <i>08/25/2020</i>.
+            </li>
+        </ul>
     </div>
 
-    <!-- Tech Skills Icons -->
-    <div class="main-tile tile-tech">
-        <h4><span style="color:#f84444">Some Tech I Use</span></h4>
+    <div class="tile-tech">
+        <h4><span class="accent">Some Tech I Use</span></h4>
     <div class="tech-row">
-        <i class="devicon-javascript-plain" data-name="JavaScript" style="font-size: 40px;"></i>
-        <i class="devicon-html5-plain" data-name="HTML" style="font-size: 40px;"></i>
-        <i class="devicon-css3-plain" data-name="CSS" style="font-size: 40px;"></i>
-        <i class="devicon-nodejs-plain" data-name="Node.js" style="font-size: 40px;"></i>
-        <i class="devicon-github-plain" data-name="GitHub" style="font-size: 40px;"></i>
-        <i class="devicon-git-plain" data-name="Git" style="font-size: 40px;"></i>
-        <i class="devicon-mongodb-plain" data-name="MongoDB" style="font-size: 40px;"></i>
-        <i class="devicon-netlify-plain" data-name="Netlify" style="font-size: 40px;"></i>
-        <i class="devicon-vscode-plain" data-name="VS Code" style="font-size: 40px;"></i>
+        <i class="devicon-javascript-plain" data-name="JavaScript"></i>
+        <i class="devicon-html5-plain" data-name="HTML"></i>
+        <i class="devicon-css3-plain" data-name="CSS"></i>
+        <i class="devicon-nodejs-plain" data-name="Node.js"></i>
+        <i class="devicon-github-plain" data-name="GitHub"></i>
+        <i class="devicon-git-plain" data-name="Git"></i>
+        <i class="devicon-mongodb-plain" data-name="MongoDB"></i>
+        <i class="devicon-netlify-plain" data-name="Netlify"></i>
+        <i class="devicon-vscode-plain" data-name="VS Code"></i>
     </div>
     </div>
 
-    <!-- <p>Feel free to email me about any questions or inquiries, thx! :)</p> REMOVED FOR NOW -->
-
-    <!-- Social Links -->
-    <ul class="list-inline banner-social-buttons">
-        <!-- Resume. Disabled for now...may add later in the future
-        <li>
-            <a href="Aku_Chuyum_Resume.pdf" class="btn btn-default btn-lg">📄 <span class="network-name">Resume</span></a>
-        </li>
-        -->
+    <!-- Social links -->
+    <ul class="banner-social-buttons">
         <li>
             <a href="mailto:prodbyakc@gmail.com" class="btn btn-default btn-lg">✉ <span class="network-name">Email</span></a>
         </li>
         <li>
-            <a href="https://www.linkedin.com/in/akuchuyum/" class="btn btn-default btn-lg" target="_blank">🌏︎ <span class="network-name">LinkedIn</span></a>
+            <a href="https://www.linkedin.com/in/akuchuyum/" class="btn btn-default btn-lg" target="_blank" rel="noreferrer">🌏︎ <span class="network-name">LinkedIn</span></a>
         </li>
         <li>
-            <a href="https://github.com/Reptetion" class="btn btn-default btn-lg" target="_blank">🛠 <span class="network-name">GitHub</span></a>
+            <a href="https://github.com/Reptetion" class="btn btn-default btn-lg" target="_blank" rel="noreferrer">🛠 <span class="network-name">GitHub</span></a>
         </li>
     </ul>
 
@@ -147,9 +135,9 @@
 </section>
 
 <!-- Footer -->
-<footer>  
+<footer>
     <div class="container text-center">
-       <p><span style="color:#f84444">&copy; 2026 Property of Aku Chuyum</span></p>
+       <p><span class="accent">&copy; 2026 Property of Aku Chuyum</span></p>
     </div>
 </footer>
 
