@@ -240,7 +240,7 @@ a:focus {
 }
 
 .tile-strip {
-    /* One full deck set from HTML; JS clones this strip once for seamless looping */
+    /* One full deck set from index.html; styles.css clones this strip once for infinite looping */
     display: flex;
     flex: 0 0 auto;
     height: 100%;
