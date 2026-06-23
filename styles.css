@@ -206,13 +206,16 @@ a {
 }
 
 /* =========================================================
-   PROJECTS / CERTIFICATIONS BOX
+   PROJECTS & CERTIFICATIONS BOX
    ========================================================= */
 .big-red-box {
     margin: 8px 0 38px;
     padding: 20px 22px;
-    border: 1px solid var(--accent-border);
+    border: 3px solid var(--accent-border);
+    /*
+    RED GRADIENT BOX
     background: linear-gradient(145deg, var(--accent-soft), var(--panel));
+    */
 }
 
 .big-red-box h4,
@@ -223,8 +226,13 @@ a {
 }
 
 .accomplishments-list li {
+    color: var(--text); /* text color */
     margin-bottom: 10px;
     font-size: 17px;
+}
+
+.accomplishments-list li::marker {
+    color: var(--accent); /* bullet color */
 }
 
 /* =========================================================
