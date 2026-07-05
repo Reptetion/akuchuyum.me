@@ -12,8 +12,7 @@
 
     const tileTrack = document.querySelector('.tile-track');
     const tileStrip = tileTrack?.querySelector('.tile-strip');
-   
-     // Duplicate the strip only if both elements exist
+
     if (tileTrack && tileStrip) {
         tileTrack.appendChild(tileStrip.cloneNode(true));
     }
