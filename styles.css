@@ -87,13 +87,6 @@ a {
     background-color: #000;
 }
 
-.intro-shell {
-    /* Keeps the name centered and aligned with the main text width. */
-    position: relative;
-    z-index: 1;
-    padding-bottom: 6px;
-}
-
 .site-brand {
     display: flex;
     justify-content: center;
@@ -223,7 +216,7 @@ a {
 }
 
 .banner-social-buttons a {
-    /* One shared link style for the email and social links. */
+    /* Link style */
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -258,10 +251,6 @@ footer .container {
         padding-top: 14px;
     }
 
-    .intro-shell {
-        padding-bottom: 4px;
-    }
-
     .intro-collage {
         height: clamp(340px, 48vh, 560px);
         margin-top: 8px;
@@ -286,10 +275,6 @@ footer .container {
 
     .intro {
         padding-top: 18px;
-    }
-
-    .intro-shell {
-        padding-bottom: 6px;
     }
 
     .site-brand {
@@ -324,10 +309,6 @@ footer .container {
     /* Mobile outlay - need the collage and text to stay compact. */
     .container {
         width: calc(100% - 24px);
-    }
-
-    .intro-shell {
-        padding-bottom: 4px;
     }
 
     .site-brand {
