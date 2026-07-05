@@ -88,6 +88,7 @@ a {
 }
 
 .intro-shell {
+    /* Keeps the name centered and aligned with the main text width. */
     position: relative;
     z-index: 1;
     padding-bottom: 6px;
@@ -106,6 +107,7 @@ a {
    INTRO PHOTO COLLAGE
    ========================================================= */
 .intro-collage {
+    /* Full-width band that holds the scrolling photo collage. */
     position: relative;
     overflow: hidden;
     width: 100vw;
@@ -115,6 +117,7 @@ a {
 }
 
 .tile-track {
+    /* This strip moves left forever; styles.js clones it once. */
     position: absolute;
     inset: 0 auto 0 0;
     display: flex;
@@ -129,13 +132,14 @@ a {
 }
 
 .tile-strip {
-    /* One full deck set from index.html; styles.css clones this strip once for infinite looping */
+    /* One complete set of collage images. */
     display: flex;
     flex: 0 0 auto;
     height: 100%;
 }
 
 .tile-deck {
+    /* Each deck uses the image path stored in --tile-image. */
     flex: 0 0 100vw;
     height: 100%;
     background-image: var(--tile-image);
@@ -177,6 +181,7 @@ a {
    TECH ICON GRID
    ========================================================= */
 .tech-row {
+    /* Icons wrap neatly on smaller screens. */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,6 +197,7 @@ a {
 }
 
 .tech-row i::after {
+    /* Small label that appears under each icon. */
     content: attr(data-name);
     position: absolute;
     left: 50%;
@@ -222,6 +228,7 @@ a {
    SOCIAL BUTTONS
    ========================================================= */
 .banner-social-buttons {
+    /* Simple clickable links laid out like buttons. */
     list-style: none;
     padding-left: 0;
     margin-top: 0;
@@ -233,6 +240,7 @@ a {
 }
 
 .banner-social-buttons a {
+    /* One shared link style for the email and social links. */
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -271,6 +279,7 @@ footer .container {
    RESPONSIVE ADJUSTMENTS
    ========================================================= */
 @media (min-width: 768px) {
+    /* Desktop spacing gets a little more breathing room. */
     .intro {
         padding-top: 14px;
     }
@@ -296,6 +305,7 @@ footer .container {
 }
 
 @media (max-width: 767px) {
+    /* Mobile uses tighter spacing and smaller collage sizing. */
     .container {
         width: calc(100% - 30px);
     }
@@ -337,6 +347,7 @@ footer .container {
 }
 
 @media (max-width: 576px) {
+    /* Small phones need the collage and text to stay compact. */
     .container {
         width: calc(100% - 24px);
     }
