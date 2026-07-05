@@ -250,19 +250,10 @@ footer .container {
 }
 
 /* =========================================================
-   REDUCED MOTION
-   ========================================================= */
-@media (prefers-reduced-motion: reduce) {
-    .tile-track {
-        animation: none !important;
-    }
-}
-
-/* =========================================================
    RESPONSIVE ADJUSTMENTS
    ========================================================= */
 @media (min-width: 768px) {
-    /* Desktop spacing gets a little more breathing room. */
+    /* Desktop - spacing gets a little more breathing room. */
     .intro {
         padding-top: 14px;
     }
@@ -288,7 +279,7 @@ footer .container {
 }
 
 @media (max-width: 767px) {
-    /* Mobile uses tighter spacing and smaller collage sizing. */
+    /* Mobile outlay - tighter spacing and smaller collage sizing. */
     .container {
         width: calc(100% - 30px);
     }
@@ -330,7 +321,7 @@ footer .container {
 }
 
 @media (max-width: 576px) {
-    /* Small phones need the collage and text to stay compact. */
+    /* Mobile outlay - need the collage and text to stay compact. */
     .container {
         width: calc(100% - 24px);
     }
