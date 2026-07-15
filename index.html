@@ -24,6 +24,14 @@
     </script>
 
     <!-- Betterlytics Analytics Script -->
+    <script>
+        window.betterlytics =
+            window.betterlytics || {
+                event: function () {
+                    (window.betterlytics.q = window.betterlytics.q || []).push(arguments);
+                }
+            };
+    </script>
     <script async
         src="https://betterlytics.io/analytics.js"
         data-site-id="akuchuyum-mln91m94">
@@ -91,8 +99,11 @@
                 Received verification status by Discord. Discontinued on <i>05/21/2021</i>.
             </li>
             <li>
-                <strong>2018 - 2020:</strong> <a href="https://github.com/Reptetion/BMB">Build My Bot (BMB)</a> - An open‑source Discord bot 
-                designed to help users with little to no coding experience create their own personalized bot for their server.
+                <strong>2018 - 2020:</strong> 
+                <a href="https://github.com/Reptetion/BMB" target="_blank" rel="noopener noreferrer"
+                    onclick="betterlytics.event('bmb_link_click')">Build My Bot (BMB)</a> <!--Betterlytics tracking -->
+                    - An open‑source Discord bot designed to help users with little to no 
+                    coding experience create their own personalized bot for their server.
             </li>
         </ul>
 
@@ -134,15 +145,15 @@
         -->
         <li>
             <a href="mailto:prodbyakc@gmail.com" class="social-link"
-                onclick="betterlytics.event('email_button')">✉ <span>Email</span></a> <!--Betterlytics tracking -->
+                onclick="betterlytics.event('email_button_click')">✉ <span>Email</span></a> <!--Betterlytics tracking -->
         </li>
         <li>
             <a href="https://www.linkedin.com/in/akuchuyum/" class="social-link" target="_blank" rel="noreferrer"
-                onclick="betterlytics.event('linkedin_button')">🌏︎ <span>LinkedIn</span></a> <!--Betterlytics tracking -->
+                onclick="betterlytics.event('linkedin_button_click')">🌏︎ <span>LinkedIn</span></a> <!--Betterlytics tracking -->
         </li>
         <li>
             <a href="https://github.com/Reptetion" class="social-link" target="_blank" rel="noreferrer"
-                onclick="betterlytics.event('github_button')">🛠 <span>GitHub</span></a> <!--Betterlytics tracking -->
+                onclick="betterlytics.event('github_button_click')">🛠 <span>GitHub</span></a> <!--Betterlytics tracking -->
         </li>
     </ul>
 
