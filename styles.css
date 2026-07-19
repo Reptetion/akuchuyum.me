@@ -145,7 +145,7 @@ a {
 }
 
 /* =========================================================
-   PROJETS et CERTIFICATIONS BOX
+   RED BOX
    ========================================================= */
 .big-red-box {
     margin: 8px 0 38px;
@@ -154,7 +154,7 @@ a {
 }
 
 .big-red-box h4,
-.tile-tech h4 {
+.h4 {
     font-size: 22px;
     line-height: 1.2;
     margin-bottom: 18px;
@@ -171,23 +171,8 @@ a {
 }
 
 /* =========================================================
-   TECH ICON GRID
+   TECH ICONS
    ========================================================= */
-.tech-row {
-    /* Icons wrap neatly on smaller screens. */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 12px;
-    margin-bottom: 3em;
-}
-
-.tech-row i {
-    position: relative;
-    font-size: 40px;
-}
 
 /* Icon colors */
 .devicon-javascript-plain { color: #ffff00; }
@@ -238,8 +223,24 @@ footer {
     padding: 50px 0;
 }
 
-footer .container {
-    text-align: center;
+.footer-row {
+    display: flex;
+    justify-content: space-between; /* text to left, buttons to right */
+    align-items: center;      
+    width: 100%;
+    /* alignment - refer to main-copy element */
+    max-width: 980px; 
+    margin: 0 auto;
+}
+
+.footer-row p {
+    margin: 0;
+}
+
+/* Adds space between the shields badges */
+.github-buttons {
+    display: flex;
+    gap: 5px;
 }
 
 /* =========================================================
@@ -326,10 +327,6 @@ footer .container {
 
     .main-copy {
         max-width: 100%;
-    }
-
-    .tech-row {
-        gap: 14px;
     }
 
     .banner-social-buttons {
