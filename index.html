@@ -142,7 +142,7 @@
         -->
         <li>
             <a href="mailto:prodbyakc@gmail.com" class="social-link"
-                onclick="betterlytics.event('email_button_click')">✉ <span>Email</span></a> <!--Betterlytics tracking -->
+                onclick="betterlytics.event('discord_button_click')">✉ <span>Email</span></a> <!--Betterlytics tracking -->
         </li>
         <li>
             <a href="https://www.linkedin.com/in/akuchuyum/" class="social-link" target="_blank" rel="noreferrer"
@@ -151,6 +151,10 @@
         <li>
             <a href="https://github.com/Reptetion" class="social-link" target="_blank" rel="noreferrer"
                 onclick="betterlytics.event('github_button_click')">🛠 <span>GitHub</span></a> <!--Betterlytics tracking -->
+        </li>
+        <li>
+            <a href="https://discord.com/users/251143265271808001" class="social-link"
+                onclick="betterlytics.event('discord_button_click')">🗪 <span>Discord</span></a> <!--Betterlytics tracking -->
         </li>
     </ul>
 
@@ -162,20 +166,26 @@
     <div class="container">
         <div class ="footer-row">
             <p><span class="accent">&copy; 2026 Aku Chuyum</span></p>
-            <div class="github-buttons">
-                <!-- Commit Activity -->
-                <a href="https://github.com/Reptetion/mywebsite/commits" target="_blank">
-                <img src="https://img.shields.io/github/commit-activity/y/Reptetion/mywebsite?style=flat-square" alt="Commit Activity">
+            <div class="footer-buttons">
+                <!-- Discord Status -->
+                <a>
+                <img src="https://api.statusbadges.me/badge/status/251143265271808001" alt="status">
+                </a>
+
+                <!-- Playing Game Status -->
+                <a>
+                <img src="https://api.statusbadges.me/badge/playing/251143265271808001" alt="playing">
+                </a>
+
+                <!-- Coding Status (VS Code) -->
+                <a>
+                <img src="https://api.statusbadges.me/badge/vscode/251143265271808001" alt="vscode">
                 </a>
 
                 <!-- Last Updated -->
-                <a href="https://github.com/Reptetion/mywebsite/commits" target="_blank">
-                <img src="https://img.shields.io/github/last-commit/Reptetion/mywebsite?style=flat-square" alt="Last Updated">
-                </a>
-
-                <!-- Open Issues -->
-                <a href="https://github.com/Reptetion/mywebsite/issues" target="_blank">
-                <img src="https://img.shields.io/github/issues/Reptetion/mywebsite?style=flat-square" alt="Open Issues">
+                <a href="https://github.com/Reptetion/mywebsite/commits" target="_blank"
+                    onclick="betterlytics.event('last_updated_button_click')">
+                    <img src="https://img.shields.io/github/last-commit/Reptetion/mywebsite?style=flat" alt="Last Updated">
                 </a>
             </div>
         </div>

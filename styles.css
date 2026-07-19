@@ -237,12 +237,6 @@ footer {
     margin: 0;
 }
 
-/* Adds space between the shields badges */
-.github-buttons {
-    display: flex;
-    gap: 5px;
-}
-
 /* =========================================================
    RESPONSIVE ADJUSTMENTS
    ========================================================= */
