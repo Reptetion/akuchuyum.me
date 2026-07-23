@@ -137,12 +137,12 @@
     <ul class="banner-social-buttons">
          <!-- Resume. Disabled for now...may add later in the future
         <li>
-            <a href="Aku_Chuyum_Resume.pdf" class="btn btn-default btn-lg">🗎 <span class="network-name">Resume</span></a>
+            <a href="Aku_Chuyum_Resume.pdf" class="btn btn-default btn-lg">
+                onclick="betterlytics.event('resume_button_click')">🗎 <span class="network-name">Resume</span></a> <!-+ Betterlytics tracking -->
         </li>
-        -->
         <li>
             <a href="mailto:prodbyakc@gmail.com" class="social-link"
-                onclick="betterlytics.event('discord_button_click')">✉ <span>Email</span></a> <!--Betterlytics tracking -->
+                onclick="betterlytics.event('email_button_click')">✉ <span>Email</span></a> <!--Betterlytics tracking -->
         </li>
         <li>
             <a href="https://www.linkedin.com/in/akuchuyum/" class="social-link" target="_blank" rel="noreferrer"
@@ -184,7 +184,7 @@
 
                 <!-- Last Updated -->
                 <a href="https://github.com/Reptetion/mywebsite/commits" target="_blank"
-                    onclick="betterlytics.event('last_updated_button_click')">
+                    onclick="betterlytics.event('last_updated_button_click')"> <!--Betterlytics tracking -->
                     <img src="https://img.shields.io/github/last-commit/Reptetion/mywebsite?style=flat" alt="Last Updated">
                 </a>
             </div>
