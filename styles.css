@@ -89,10 +89,10 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 /* =========================================================
-   INTRO PHOTO COLLAGE
+   IMAGE COLLAGE
    ========================================================= */
-.photo-collage {
-    /* Full-width band that holds the scrolling photo collage. */
+.image-collage {
+    /* Full-width band that holds the scrolling image collage. */
     position: relative;
     overflow: hidden;
     width: 100vw; 
@@ -115,8 +115,8 @@ a { color: var(--accent); text-decoration: none; }
     pointer-events: none;
     transform: translateZ(0);
 
-    /* Intro collage speed: lower value = faster scroll, higher value = slower scroll */
-    animation: tileScroll 75s linear infinite;
+    /* Tile track speed: lower value = faster scroll, higher value = slower scroll */
+    animation: tileScroll 100s linear infinite;
 }
 
 .tile-strip {
@@ -130,7 +130,7 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 .tile-deck {
-    width: 34vw; /* Sets the proportional width of each photo square */
+    width: 34vw; /* Sets the proportional width of each image square */
     flex-shrink: 0; /* Prevents the browser from cutting the images */
     height: 100%; /* Fills the full height of the track container */
     background-image: var(--tile-image); /* Pulls the image source from HTML */
@@ -159,13 +159,13 @@ a { color: var(--accent); text-decoration: none; }
     margin-bottom: 18px;
 }
 
-.accomplishments-list li {
+.point-form-list li {
     color: var(--text); /* text color */
     margin-bottom: 10px;
     font-size: 17px;
 }
 
-.accomplishments-list li::marker { color: var(--accent); }
+.point-form-list li::marker { color: var(--accent); }
 
 /* =========================================================
    TECH ICONS
@@ -228,6 +228,34 @@ footer {
     margin: 0 auto;
 }
 
+/* =========================================================
+   IMAGE GALLERY
+   ========================================================= */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.gallery-item {
+    width: 100%;
+    max-width: 1000px; /* size of image gallery */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 .footer-row p { margin: 0; }
 
 /* =========================================================
@@ -247,7 +275,7 @@ footer {
     .container { width: calc(100% - 30px); }
     .intro { padding-top: 18px; }
     .site-brand { font-size: clamp(22px, 6.5vw, 28px); }
-    .photo-collage { margin-top: 6px; }
+    .image-collage { margin-top: 6px; }
     .tile-deck { width: 48vw; } 
 
     .banner-social-buttons li {
@@ -265,8 +293,8 @@ footer {
     .container { width: calc(100% - 24px); }
     .site-brand { font-size: clamp(19px, 7.5vw, 25px); }
     
-    /* Fpr small phones - taller photo container to prevent cropping */
-    .photo-collage { height: 35vw; } 
+    /* Fpr small phones - taller images container to prevent cropping */
+    .image-collage { height: 35vw; } 
     .tile-deck { width: 62vw; }
     
     .main-copy { max-width: 100%; }
