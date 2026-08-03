@@ -26,7 +26,7 @@ body {
     color: var(--text);
     background-color: var(--bg);
     font-family: Manrope, "Segoe UI", Arial, sans-serif;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+    -webkit-tap-highlight-color: var(--selection);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,20 +43,10 @@ p {
     line-height: 1.6;
 }
 
-a {
-    color: var(--accent);
-    text-decoration: none;
-}
-
-.accent {
-    color: var(--accent);
-}
-
-::selection,
-::-moz-selection {
-    text-shadow: none;
-    background: var(--selection);
-}
+/* Quick link and accent text styles */
+a { color: var(--accent); text-decoration: none; }
+.accent { color: var(--accent); }
+::selection, ::-moz-selection { text-shadow: none; background: var(--selection); }
 
 /* =========================================================
    LAYOUT HELPERS
@@ -67,7 +57,7 @@ a {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 20px; /* Standardized to 20px to prevent overriding */
 }
 
 .main-copy {
@@ -84,59 +74,68 @@ a {
     color: var(--text);
     position: relative;
     overflow: hidden;
-    background-color: #000;
+    background-color: var(--bg);
 }
 
 .site-brand {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Change font style of navbar / website header. */
-    font: italic clamp(24px, 2.4vw, 34px)/1 "Segoe Script", "Brush Script MT", "Snell Roundhand", cursive;
+    font-size: clamp(24px, 2.4vw, 34px); /* scaling on diff screens */
+    font-family: "Space Grotesk", sans-serif; /* Change font here; primary, backup font */ 
+    font-style: normal; /* Delete line if you want normal, non-slanted text (normal) */  
+    line-height: 1; /* to match font size tightly, removing excess space */
     text-shadow: 0 0 16px rgba(0, 0, 0, 0.45);
 }
 
 /* =========================================================
    INTRO PHOTO COLLAGE
    ========================================================= */
-.intro-collage {
+.photo-collage {
     /* Full-width band that holds the scrolling photo collage. */
     position: relative;
     overflow: hidden;
-    width: 100vw; /* to adjust the width */
-    height: clamp(290px, 54vh, 520px);
-    margin-top: 10px;
+    width: 100vw; 
+    height: 27vw; /* Base height applied across desktop and tablets */
+    margin-top: 8px;
     margin-left: calc(50% - 50vw);
 }
 
 .tile-track {
-    /* This strip moves left forever; styles.js clones it once. */
+     /* This strip moves left forever; styles.js clones it once. */
     position: absolute;
     inset: 0 auto 0 0;
     display: flex;
+    /*
+    gap: 3px; Gap between the original strip and the cloned strip *
+    */
     width: max-content;
-    height: 100%; /* to adjust the width (to drop down collage - refer to Line 255) */
+    height: 100%; 
     z-index: 0;
     pointer-events: none;
     transform: translateZ(0);
 
     /* Intro collage speed: lower value = faster scroll, higher value = slower scroll */
-    animation: tileScroll 200s linear infinite;
+    animation: tileScroll 75s linear infinite;
 }
 
 .tile-strip {
     /* One complete set of collage images. */
     display: flex;
+    /*
+    gap: 3px; Gap between the original strip and the cloned strip *
+    */
     flex: 0 0 auto;
     height: 100%;
 }
 
 .tile-deck {
-    /* Each deck uses the image path stored in --tile-image. */
-    flex: 0 0 100vw;
-    height: 100%;
-    background-image: var(--tile-image);
-    background-size: 34% auto;
+    width: 34vw; /* Sets the proportional width of each photo square */
+    flex-shrink: 0; /* Prevents the browser from cutting the images */
+    height: 100%; /* Fills the full height of the track container */
+    background-image: var(--tile-image); /* Pulls the image source from HTML */
+    background-size: 100% auto; /* Scales the image width to 100% and auto-adjusts height */
+    background-repeat: no-repeat; /* Prevents repeating */
 }
 
 @keyframes tileScroll {
@@ -145,7 +144,7 @@ a {
 }
 
 /* =========================================================
-   RED BOX
+   BIG RED BOX
    ========================================================= */
 .big-red-box {
     margin: 8px 0 38px;
@@ -166,15 +165,11 @@ a {
     font-size: 17px;
 }
 
-.accomplishments-list li::marker {
-    color: var(--accent); /* bullet color */
-}
+.accomplishments-list li::marker { color: var(--accent); }
 
 /* =========================================================
    TECH ICONS
    ========================================================= */
-
-/* Icon colors */
 .devicon-javascript-plain { color: #ffff00; }
 .devicon-html5-plain { color: #f06529; }
 .devicon-css3-plain { color: #1572b6; }
@@ -233,67 +228,32 @@ footer {
     margin: 0 auto;
 }
 
-.footer-row p {
-    margin: 0;
-}
+.footer-row p { margin: 0; }
 
 /* =========================================================
    RESPONSIVE ADJUSTMENTS
    ========================================================= */
+
 @media (min-width: 768px) {
-    /* Desktop - spacing gets a little more breathing room. */
-    .intro {
-        padding-top: 14px;
-    }
-
-    .intro-collage {
-        height: clamp(340px, 48vh, 560px); /* to drop down intro collage lower */
-        margin-top: 8px;
-    }
-
-    .content-section {
-        padding-top: 50px;
-    }
+    .intro { padding-top: 14px; }
 }
 
 @media (max-width: 1199px) {
-    .banner-social-buttons {
-        margin-top: 15px;
-    }
+    .banner-social-buttons { margin-top: 15px; }
 }
 
 @media (max-width: 767px) {
     /* Mobile outlay - tighter spacing and smaller collage sizing. */
-    .container {
-        width: calc(100% - 30px);
-    }
-
-    .intro {
-        padding-top: 18px;
-    }
-
-    .site-brand {
-        font-size: clamp(22px, 6.5vw, 28px);
-    }
-
-    .intro-collage {
-        height: 275px;
-        margin-top: 6px;
-    }
-
-    .tile-deck {
-        background-size: 48% auto;
-    }
-
-    .content-section {
-        padding-top: 56px;
-    }
+    .container { width: calc(100% - 30px); }
+    .intro { padding-top: 18px; }
+    .site-brand { font-size: clamp(22px, 6.5vw, 28px); }
+    .photo-collage { margin-top: 6px; }
+    .tile-deck { width: 48vw; } 
 
     .banner-social-buttons li {
         display: inline-flex;
         margin-bottom: 12px;
     }
-
     .banner-social-buttons a {
         width: 100%;
         min-width: 0;
@@ -301,34 +261,16 @@ footer {
 }
 
 @media (max-width: 576px) {
-    /* Mobile outlay - need the collage and text to stay compact. */
-    .container {
-        width: calc(100% - 24px);
-    }
-
-    .site-brand {
-        font-size: clamp(19px, 7.5vw, 25px);
-    }
-
-    .intro-collage {
-        height: 245px;
-        margin-top: 6px;
-    }
-
-    .tile-deck {
-        background-size: 62% auto;
-    }
-
-    .main-copy {
-        max-width: 100%;
-    }
-
-    .banner-social-buttons {
-        gap: 10px;
-    }
-
-    .banner-social-buttons a {
-        padding-left: 14px;
-        padding-right: 14px;
-    }
+    /* Mobile outlay */
+    .container { width: calc(100% - 24px); }
+    .site-brand { font-size: clamp(19px, 7.5vw, 25px); }
+    
+    /* Fpr small phones - taller photo container to prevent cropping */
+    .photo-collage { height: 35vw; } 
+    .tile-deck { width: 62vw; }
+    
+    .main-copy { max-width: 100%; }
+    .banner-social-buttons { gap: 10px; }
+    .banner-social-buttons a { padding-left: 14px; padding-right: 14px; }
 }
+
