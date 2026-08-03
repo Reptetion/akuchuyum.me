@@ -4,7 +4,7 @@
 ![Last Updated](https://img.shields.io/github/last-commit/Reptetion/mywebsite?style=flat-square)
 ![Open Issues](https://img.shields.io/github/issues/Reptetion/mywebsite?style=flat-square)
 
-This is my personal website. Built by me using HTML, CSS, and Vanilla JS.
+My website. Built using HTML, CSS, and Vanilla JS.
 - Icons and Fonts provided by Devicon and Google Fonts.
 - Photo collage template from photocollage.com
 - Badges generated using shields.io and statusbadges.me 
