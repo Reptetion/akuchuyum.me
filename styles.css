@@ -116,7 +116,7 @@ a { color: var(--accent); text-decoration: none; }
     transform: translateZ(0);
 
     /* Tile track speed: lower value = faster scroll, higher value = slower scroll */
-    animation: tileScroll 100s linear infinite;
+    animation: tileScroll 75s linear infinite;
 }
 
 .tile-strip {
