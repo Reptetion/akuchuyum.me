@@ -294,7 +294,7 @@ footer {
     .site-brand { font-size: clamp(19px, 7.5vw, 25px); }
     
     /* Fpr small phones - taller images container to prevent cropping */
-    .image-collage { height: 100vw; } 
+    .image-collage { height: 50vw; } 
     .tile-deck { width: 62vw; }
     
     .main-copy { max-width: 100%; }
