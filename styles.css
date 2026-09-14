@@ -75,6 +75,7 @@ a { color: var(--accent); text-decoration: none; }
 .intro-heading {
     margin: 0;
     font-size: clamp(24px, 2.4vw, 34px);
+    transform: translateY(32px);
 }
 
 .intro-image {
@@ -86,6 +87,7 @@ a { color: var(--accent); text-decoration: none; }
 .latest-commit {
     display: inline-block;
     justify-self: end;
+    transform: translateY(32px);
     padding: 4px 8px;
     border: 1px solid var(--accent-border);
     border-radius: 3px;

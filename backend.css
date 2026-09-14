@@ -83,6 +83,7 @@ a { color: var(--accent); text-decoration: none; }
 .intro-heading {
     margin: 0;
     font-size: clamp(24px, 2.4vw, 34px);
+    transform: translateY(32px);
 }
 
 .intro-image {
@@ -94,6 +95,7 @@ a { color: var(--accent); text-decoration: none; }
 .latest-commit {
     display: inline-block;
     justify-self: end;
+    transform: translateY(32px);
     padding: 4px 8px;
     border: 1px solid var(--accent-border);
     border-radius: 3px;
@@ -124,6 +126,21 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 .point-form-list li::marker { color: var(--accent); }
+
+.tech-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.tech-tags span {
+    padding: 3px 7px;
+    border: 1px solid var(--accent-border);
+    border-radius: 3px;
+    color: var(--accent);
+    font: 700 12px/1.2 "Space Mono", monospace;
+}
 
 .banner-social-buttons {
     /* Clickable links laid out like buttons. */

@@ -60,8 +60,9 @@ Author(s): Aku Chuyum
         <!-- Figure Image -->
         <img class="intro-image" src="imgs/Le_Artiste_Silencieux-Figure.png" alt="">
         <!-- Latest GitHub commit number -->
-        <a class="latest-commit" href="https://github.com/Reptetion/akuchuyum.me/commits" target="_blank">
-            <span id="latest-commit"></span>
+        <a class="latest-commit" href="https://github.com/Reptetion/akuchuyum.me/commits" target="_blank"
+        onclick="betterlytics.event('last_updated_badge_click')"> <!--Betterlytics tracking -->
+        <span id="latest-commit"></span>
         </a>
     </div>
 </header>
@@ -70,7 +71,7 @@ Author(s): Aku Chuyum
 <section class="container content-section main-copy">
     <p>
         I'm a freelance developer, accounting & CIS student.
-        I love building useful things for the web.
+        Creating and designing, one step at a time.
     </p>
     <!-- BIG RED BOX -->
     <div class="big-red-box" aria-label="accomplishments">
@@ -81,15 +82,23 @@ Author(s): Aku Chuyum
              <li>
                 <strong>akuchuyum.me</strong> 
                     - This website. Built with HTML & CSS.
+                <div class="tech-tags" aria-label="Technologies used">
+                    <span>HTML/CSS</span>
+                </div>
             </li>   
             <li>
                 <strong>2019 - 2021:</strong> 
                 <a href="imgs/ReCreate Bot listing (bots.ondiscord.xyz).png"
                 onclick="betterlytics.event('recreate_link_click')"> <!--Betterlytics tracking -->
                 ReCreate Discord Bot</a>
-                    - A multipurpose chatbot for user entertainment,
-                    server moderation, configurations, and automation. At its peak, reached 300+ servers with a reach of over 300,000 users.
+                    - A multipurpose chatbot for user entertainment, server moderation, configurations, 
+                    and automation. At its peak, reached 300+ servers with a reach of over 300,000 users.
                     Received verification status by Discord. Discontinued on <i>05/21/2021</i>.
+                <div class="tech-tags" aria-label="Technologies used">
+                    <span>Node.js</span>
+                    <span>Discord API</span>
+                    <span>Automation</span>
+                </div>
             </li>
             <li>
                 <strong>2018 - 2020:</strong> 
@@ -98,6 +107,11 @@ Author(s): Aku Chuyum
                 Build My Bot (BMB)</a>
                     - An open‑source Discord bot designed to help users with little to no 
                     coding experience create their own personalized bot for their own Discord server.
+                <div class="tech-tags" aria-label="Technologies used">
+                    <span>JavaScript</span>
+                    <span>Discord API</span>
+                    <span>Automation</span>
+                </div>
             </li>
         </ul>
         <!--Education-->
@@ -168,8 +182,7 @@ Author(s): Aku Chuyum
                 </a>
 
                 <!-- Last Updated -->
-                <a href="https://github.com/Reptetion/akuchuyum.me/commits" target="_blank"
-                    onclick="betterlytics.event('last_updated_badge_click')"> <!--Betterlytics tracking -->
+                <a></a>
                     <img src="https://img.shields.io/github/last-commit/Reptetion/akuchuyum.me?style=flat" alt="last updated">
                 </a>
             </div>
