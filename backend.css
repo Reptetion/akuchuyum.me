@@ -60,6 +60,14 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 /* =========================================================
+   HERO / INTRO SECTION
+   ========================================================= */
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+/* =========================================================
    INTRO IMAGE
    ========================================================= */
 .intro-layout {
@@ -103,7 +111,8 @@ a { color: var(--accent); text-decoration: none; }
     border: 3px solid var(--accent-border);
 }
 
-.big-red-box h4 {
+.big-red-box h4,
+.h4 {
     font-size: 22px;
     line-height: 1.2;
     margin-bottom: 18px;
