@@ -70,22 +70,11 @@ a { color: var(--accent); text-decoration: none; }
    ========================================================= */
 .intro {
     width: 100%;
-    padding: 18px 0 0;
+    padding: 0;
     color: var(--text);
     position: relative;
     overflow: hidden;
     background-color: var(--bg);
-}
-
-.site-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: clamp(24px, 2.4vw, 34px); /* scaling on diff screens */
-    font-family: "Space Grotesk", sans-serif; /* Change font here; primary, backup font */ 
-    font-style: normal; /* Delete line if you want normal, non-slanted text (normal) */  
-    line-height: 1; /* to match font size tightly, removing excess space */
-    text-shadow: 0 0 16px rgba(0, 0, 0, 0.45);
 }
 
 /* =========================================================
@@ -94,9 +83,8 @@ a { color: var(--accent); text-decoration: none; }
 .intro-image {
     display: block;
     width: 100vw;
-    height: 27vw;
-    object-fit: cover;
-    margin-top: 8px;
+    height: min(75vw, 450px);
+    object-fit: contain;
     margin-left: calc(50% - 50vw);
 }
 
@@ -206,10 +194,6 @@ footer {
    RESPONSIVE ADJUSTMENTS
    ========================================================= */
 
-@media (min-width: 768px) {
-    .intro { padding-top: 14px; }
-}
-
 @media (max-width: 1199px) {
     .banner-social-buttons { margin-top: 15px; }
 }
@@ -217,9 +201,6 @@ footer {
 @media (max-width: 767px) {
     /* Mobile outlay - tighter spacing. */
     .container { width: calc(100% - 30px); }
-    .intro { padding-top: 18px; }
-    .site-brand { font-size: clamp(22px, 6.5vw, 28px); }
-    .intro-image { margin-top: 6px; }
 
     .banner-social-buttons li {
         display: inline-flex;
@@ -234,10 +215,6 @@ footer {
 @media (max-width: 576px) {
     /* Mobile outlay */
     .container { width: calc(100% - 24px); }
-    .site-brand { font-size: clamp(19px, 7.5vw, 25px); }
-    .intro-image { height: 50vw; }
-    .image-collage { height: 50vw; }
-    .image-collage img { width: 62vw; }
     
     .main-copy { max-width: 100%; }
     .banner-social-buttons { gap: 10px; }
