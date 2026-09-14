@@ -89,58 +89,22 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 /* =========================================================
-   IMAGE COLLAGE
+   INTRO IMAGE
    ========================================================= */
 .image-collage {
-    /* Full-width band that holds the scrolling image collage. */
-    position: relative;
+    display: flex;
     overflow: hidden;
-    width: 100vw; 
-    height: 27vw; /* Base height applied across desktop and tablets */
+    width: 100vw;
+    height: 27vw;
     margin-top: 8px;
     margin-left: calc(50% - 50vw);
 }
 
-.tile-track {
-     /* This strip moves left forever; script.js clones it once. */
-    position: absolute;
-    inset: 0 auto 0 0;
-    display: flex;
-    /*
-    gap: 3px; Gap between the original strip and the cloned strip *
-    */
-    width: max-content;
-    height: 100%; 
-    z-index: 0;
-    pointer-events: none;
-    transform: translateZ(0);
-
-    /* Tile track speed: lower value = faster scroll, higher value = slower scroll */
-    animation: tileScroll 75s linear infinite;
-}
-
-.tile-strip {
-    /* One complete set of collage images. */
-    display: flex;
-    /*
-    gap: 3px; Gap between the original strip and the cloned strip *
-    */
-    flex: 0 0 auto;
+.image-collage img {
+    width: 34vw;
     height: 100%;
-}
-
-.tile-deck {
-    width: 34vw; /* Sets the proportional width of each image square */
-    flex-shrink: 0; /* Prevents the browser from cutting the images */
-    height: 100%; /* Fills the full height of the track container */
-    background-image: var(--tile-image); /* Pulls the image source from HTML */
-    background-size: 100% auto; /* Scales the image width to 100% and auto-adjusts height */
-    background-repeat: no-repeat; /* Prevents repeating */
-}
-
-@keyframes tileScroll {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
+    flex-shrink: 0;
+    object-fit: cover;
 }
 
 /* =========================================================
@@ -166,19 +130,6 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 .point-form-list li::marker { color: var(--accent); }
-
-/* =========================================================
-   TECH ICONS
-   ========================================================= */
-.devicon-javascript-plain { color: #ffff00; }
-.devicon-html5-plain { color: #f06529; }
-.devicon-css3-plain { color: #1572b6; }
-.devicon-nodejs-plain { color: #3c873a; }
-.devicon-github-plain { color: #fff; }
-.devicon-git-plain { color: #f1502f; }
-.devicon-mongodb-plain { color: #47a248; }
-.devicon-netlify-plain { color: #00C7B7; }
-.devicon-vscode-plain { color: #007acc; }
 
 /* =========================================================
    SOCIAL BUTTONS
@@ -271,12 +222,12 @@ footer {
 }
 
 @media (max-width: 767px) {
-    /* Mobile outlay - tighter spacing and smaller collage sizing. */
+    /* Mobile outlay - tighter spacing. */
     .container { width: calc(100% - 30px); }
     .intro { padding-top: 18px; }
     .site-brand { font-size: clamp(22px, 6.5vw, 28px); }
     .image-collage { margin-top: 6px; }
-    .tile-deck { width: 48vw; } 
+    .image-collage img { width: 48vw; }
 
     .banner-social-buttons li {
         display: inline-flex;
@@ -292,10 +243,8 @@ footer {
     /* Mobile outlay */
     .container { width: calc(100% - 24px); }
     .site-brand { font-size: clamp(19px, 7.5vw, 25px); }
-    
-    /* Fpr small phones - taller images container to prevent cropping */
-    .image-collage { height: 50vw; } 
-    .tile-deck { width: 62vw; }
+    .image-collage { height: 50vw; }
+    .image-collage img { width: 62vw; }
     
     .main-copy { max-width: 100%; }
     .banner-social-buttons { gap: 10px; }
