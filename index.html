@@ -6,22 +6,17 @@ Author(s): Aku Chuyum
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
      <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="ug5B03ZYVU9P0JDY7SkV571f-LuPI8MZjRqz-cQoaXI" />
-
     <!-- Bing Webmaster Tools Verification -->
     <meta name="msvalidate.01" content="E2C11CDD1956C603E9A2645D9C7EEBF0" />
-    
     <!--SEO metadata-->
     <title>Aku - Le site D'Aku</title>
     <meta name="description" content="Aku Chuyum - Freelance developer, accounting & CIS student.">
     <meta name="author" content="Aku Chuyum">
-
     <!-- Structured data for SEO -->
     <script type="application/ld+json">
     {
@@ -32,7 +27,6 @@ Author(s): Aku Chuyum
       "url": "https://akuchuyum.me"
     }
     </script>
-
     <!-- Betterlytics Analytics Script -->
     <script>
         window.betterlytics =
@@ -46,47 +40,36 @@ Author(s): Aku Chuyum
         src="https://betterlytics.io/analytics.js"
         data-site-id="akuchuyum-mln91m94">
     </script>
-
     <!-- Main stylesheet -->
     <link href="styles.css" rel="stylesheet">
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-
     <!-- Devicon CSS (for the tech icons)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
     <!--Browser Tab Icon (Favicon)-->
     <link rel="icon" href="imgs/A.jpg" type="image/jpg">
 </head>
-
 <body>
 <!-- START OF WEB PAGE -->
-
 <!-- Intro image -->
 <header class="intro">
     <div class="intro-layout">
         <h2 class="intro-heading accent">Hi, I'm Aku</h2>
         <img class="intro-image" src="imgs/L_Artiste_Silencieux-Figure.png" alt="">
-        <a class="latest-commit" href="https://github.com/Reptetion/akuchuyum.me/commits" target="_blank"
-            aria-label="View the latest GitHub commit">
+        <a class="latest-commit" href="https://github.com/Reptetion/akuchuyum.me/commits" target="_blank">
             <span id="latest-commit">#------</span>
         </a>
     </div>
 </header>
-
 <!-- MAIN CONTENT -->
-<section id="main" class="container content-section">
-<div class="main-copy">
+<section class="container content-section main-copy">
     <p>
         I'm a freelance developer, accounting & CIS student.
         I love building useful things for the web.
     </p>
-
     <!-- BIG RED BOX -->
     <div class="big-red-box" aria-label="accomplishments">
         <h4><span class="accent">My Profile</span></h4><br>
-
         <!--Projects-->
         <p class="accent">Projects</p>
         <ul class="point-form-list">
@@ -112,7 +95,6 @@ Author(s): Aku Chuyum
                     coding experience create their own personalized bot for their own Discord server.
             </li>
         </ul>
-
         <!--Education-->
         <p class="accent">Education</p>
         <ul class="point-form-list">
@@ -121,7 +103,6 @@ Author(s): Aku Chuyum
                 Major in Accounting with a minor in Computer Information Systems (CIS). Mount Royal University.
             </li>
         </ul>
-
         <!--Certifications-->
         <p class="accent">Certification(s)</p>
         <ul class="point-form-list">
@@ -130,7 +111,6 @@ Author(s): Aku Chuyum
             </li>
         </ul>
     </div>
-
     <!-- Social links -->
     <ul class="banner-social-buttons">
          <!-- Resume. Disabled for now...may add later in the future
@@ -159,14 +139,10 @@ Author(s): Aku Chuyum
                 onclick="betterlytics.event('discord_button_click')">🗪 <span>Discord</span></a> <!--Betterlytics tracking -->
         </li>
     </ul>
-
-</div>
 </section>
-
 <!-- FOOTER -->
 <footer>
-    <div class="container">
-        <div class ="footer-row">
+    <div class="container footer-row">
             <p><span class="accent">&copy; 2026 Aku Chuyum</span></p>
             <div class="footer-buttons">
                 <!-- Discord Status -->
@@ -190,10 +166,8 @@ Author(s): Aku Chuyum
                     <img src="https://img.shields.io/github/last-commit/Reptetion/akuchuyum.me?style=flat" alt="last updated">
                 </a>
             </div>
-        </div>
     </div>
 </footer>
-
 <script>
     fetch('https://api.github.com/repos/Reptetion/akuchuyum.me/commits?per_page=1')
         .then(response => response.ok ? response.json() : Promise.reject(response.status))
