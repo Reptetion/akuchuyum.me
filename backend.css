@@ -126,7 +126,7 @@ a { color: var(--accent); text-decoration: none; }
 
 .point-form-list li::marker { color: var(--accent); }
 
-/* Small technology tags beneath project descriptions. */
+/* Tags beneath project descriptions. */
 .tech-tags {
     display: flex;
     gap: 6px;

@@ -5,8 +5,7 @@
 ![Open Issues](https://img.shields.io/github/issues/Reptetion/akuchuyum.me?style=flat-square)
 
 My website. Built using HTML & CSS
-- Icons and Fonts provided by Devicon and Google Fonts
-- Photo collage template from photocollage.com
+- Fonts provided by Google Fonts
 - Badges generated using shields.io and statusbadges.me 
 
 All images and graphic elements displayed on the site are either owned or created by me.
