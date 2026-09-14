@@ -113,8 +113,7 @@ a { color: var(--accent); text-decoration: none; }
     border: 3px solid var(--accent-border);
 }
 
-.big-red-box h4,
-.h4 {
+.big-red-box h4 {
     font-size: 22px;
     line-height: 1.2;
     margin-bottom: 18px;
@@ -127,6 +126,7 @@ a { color: var(--accent); text-decoration: none; }
 
 .point-form-list li::marker { color: var(--accent); }
 
+/* Small technology tags beneath project descriptions. */
 .tech-tags {
     display: flex;
     gap: 6px;
@@ -138,7 +138,7 @@ a { color: var(--accent); text-decoration: none; }
     padding: 3px 7px;
     border: 1px solid var(--accent-border);
     border-radius: 3px;
-    color: var(--accent);
+    color: var(--text);
     font: 700 12px/1.2 "Space Mono", monospace;
 }
 
